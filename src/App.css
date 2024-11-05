@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+    --centrar: center;
+}
+h2 {
+    color: white;
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+ul.Menu {
+    display: inline-flex;
+    flex-direction: row;
+    width: 96%;
+    list-style: none;
+    justify-content: center;
+}
+ul.Menu button {
+    font-family: "Baloo 2", sans-serif;
+    background-color: #df700700;
+    font-weight: 600;
+    color: #fff;
+    border: 0;
+}
+ul.Menu button:hover {
+    color: #f7dfb9;
+    text-decoration: underline;
+}
+input#checkboxuno,
+input#checkboxdos {
+    width: 5%;
+}
+.img-centrado {
+    margin: auto;
+    display: table;
+}
+.error {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: #021aa3;
+}
+input,
+select {
+    font-family: "Nunito", sans-serif;
+    background-color: #dd6e1400;
+    border: 0;
+    border-bottom: 1px solid #ffffff6e;
+    width: 100%;
+    color: white;
+}
+label {
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+}
+.logo {
+    margin: auto;
+    display: table;
+}
+.PaginaPrincipal {
+    margin: auto;
+    display: table;
+    color: white;
+}
+main.PaginaPrincipal {
+    display: flex;
+}
+
+.PaginaPrincipal section {
+  margin: auto;
+  height: 600px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.PaginaPrincipal section button {
+    background-color: #c55f00;
+    box-shadow: 1px 3px 8px #854204;
+    padding: 10px 17px;
+    border-radius: 16px;
+    transition: 0.2s;
+    margin: auto;
+    display: table;
+    color: white;
+    border: 0;
+}
+.PaginaPrincipal section button:hover {
+    transform: scale(1.1);
+}
+
+.PaginaPrincipal button.btn-enviar {
+    background-color: #0521b9;
+    width: 100%;
+    margin-top: 43px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+#resultados {
+    color: white;
+    font-family: "Nunito";
+}
+input#checkbox {
+    width: 5%;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (min-width: 200px) {
+    body {
+        background: linear-gradient(to right, #ae5604ed, #ee7200f7), url(/src/img/fondo-personajes.jpg);
+        background-size: auto;
+        background-position: center;
+    }
+    .PaginaPrincipal section {
+        width: 256px;
+    }
+}
+@media (min-width: 576px) {
+    body {
+        background-size: 142%;
+        background-position: center top;
+    }
+    .PaginaPrincipal section {
+        width: 300px;
+    }
+}
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
